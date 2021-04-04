@@ -1,0 +1,53 @@
+.contacts {
+  padding: 0px 0px 20px;
+
+  &__button-add,
+  &__contact-button-delete {
+    padding: 4px 10px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__button-add {
+    background-color: #68a3fd;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px 0.1px #bbbbbb;
+  }
+
+  &__contact {
+    display: flex;
+    padding: 10px 20px;
+    box-shadow: 0 1px 4px 0.1px #bbbbbb;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      cursor: pointer;
+
+      span {
+        color: #808080;
+      }
+    }
+
+    &-button-delete {
+      background-color: #ff4444;
+    }
+  }
+
+  &__contact + &__contact  {
+    margin-top: 8px;
+  }
+}

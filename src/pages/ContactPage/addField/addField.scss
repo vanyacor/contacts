@@ -1,0 +1,61 @@
+.add-field {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  box-shadow: 0 1px 4px 0.1px #bbbbbb;
+
+  &__top {
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+
+
+    &-field {
+      display: flex;
+      flex-direction: column;
+      color: #808080;
+
+      input {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(223, 243, 255);
+      }
+    }
+
+    &-field + &-field {
+      margin-top: 8px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button-add,
+  &__button-cancel {
+    padding: 4px 10px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  &__button-add {
+    background-color: #13fa7b;
+  }
+
+  &__button-cancel {
+    background-color: #68a3fd;
+  }
+
+  &__warning {
+    color: #ff4242;
+  }
+}
